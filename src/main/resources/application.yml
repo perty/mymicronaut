@@ -10,9 +10,9 @@ micronaut:
 
 datasources:
   default:
-    url: ${DATABASE_URL:`jdbc:postgresql://localhost:5432/mymicronaut`}
-    username: ${JDBC_USER:postgres}
-    password: ${JDBC_PASSWORD:mysecret}
+    url: ${JDBC_DATABASE_URL:`jdbc:postgresql://localhost:5432/mymicronaut`}
+    username: ${JDBC_DATABASE_USERNAME:postgres}
+    password: ${JDBC_DATABASE_PASSWORD:mysecret}
     driverClassName: ${JDBC_DRIVER:org.postgresql.Driver}
 
 jpa:
